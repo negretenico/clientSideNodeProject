@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1 style = "text-align:center;">About Us</h1>
+    <div>
+      <h4  style = "text-align:center;">{{company.des}}</h4>
+
+  </div>
+  <agm-map [latitude]="company.lat" [longitude]="company.long">
+    <agm-marker [latitude]="company.lat" [longitude]="company.long"></agm-marker>
+  </agm-map>
+
+  </body>
+</html>
