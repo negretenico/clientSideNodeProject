@@ -1,0 +1,38 @@
+<h1>Contact Us </h1>
+<div class="container">
+    <div class="row">
+      <!-- Step 3: patch up form tag with the TS equivalent -->
+      <form class="col-md-6 offset-md-3" [formGroup] = "emailForm" (ngSubmit) ="email()">
+
+        <div class="form-group row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control " placeholder="Enter Email" formControlName ="email" [ngClass] ="{ 'is-invalid': emailForm.get('email')?.touched && emailForm.get('email')?.invalid}" />
+            <div class="invalid-feedback">
+              <div *ngIf = "emailForm.get('email')?.errors?.required">Email is required</div>
+              <div *ngIf = "emailForm.get('email')?.errors?.email">Email seems to be not valid</div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="form-group row">
+            <label for="staticName" class="col-sm-2 col-form-label">Query</label>
+            <div class="col-sm-10">
+              <!-- Step number four add form control to the input elemetns -->
+              <input type="text" class="form-control" 
+              placeholder="Enter Query" formControlName ="query" [ngClass] ="{ 'is-invalid': emailForm.get('query')?.touched && emailForm.get('query')?.invalid}"/>
+              <div class="invalid-feedback">
+                <div *ngIf = "emailForm.get('query')?.errors?.required">Query is required</div>
+            </div>
+            </div>
+          </div>
+  
+        <div class="form-group row">
+          <div class="col-sm-10 offset-sm-2">
+            <!--TODO: disable the button if the form is invalid in angular-->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
