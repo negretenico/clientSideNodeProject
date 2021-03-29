@@ -4,6 +4,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ChatComponent } from './chat/chat.component';
 import { ContactUsComponent } from './contact/contact-us/contact-us.component';
 import { ThankyouComponent } from './contact/thankyou/thankyou.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {path: 'about', component: AboutUsComponent},
@@ -20,7 +21,8 @@ const routes: Routes = [
 },
 {
   path: 'chat', component: ChatComponent
-}
+},
+{path:'**',component: PageNotFoundComponent},
 
 
 ];
