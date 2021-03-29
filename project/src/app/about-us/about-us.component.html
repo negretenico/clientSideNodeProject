@@ -5,13 +5,17 @@
   </head>
   <body>
     <h1 style = "text-align:center;">About Us</h1>
-    <div>
-      <h4  style = "text-align:center;">{{company.des}}</h4>
 
+  <div class="card">
+    <div class="container">
+      <h4><b>{{company.name}}</b></h4> 
+      <agm-map [latitude]="company.lat" [longitude]="company.long">
+        <agm-marker [latitude]="company.lat" [longitude]="company.long"></agm-marker>
+      </agm-map>    
+      <p  style = "text-align:center;">{{company.des}}</p>
+    </div>
   </div>
-  <agm-map [latitude]="company.lat" [longitude]="company.long">
-    <agm-marker [latitude]="company.lat" [longitude]="company.long"></agm-marker>
-  </agm-map>
 
+  
   </body>
 </html>

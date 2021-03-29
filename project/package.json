@@ -24,6 +24,7 @@
     "@types/chart.js": "^2.9.31",
     "@types/chartjs": "0.0.31",
     "@types/socket.io-client": "^1.4.36",
+    "bootstrap": "^4.6.0",
     "rxjs": "~6.6.0",
     "rxjs-compat": "^6.6.7",
     "socket.io": "^4.0.0",
