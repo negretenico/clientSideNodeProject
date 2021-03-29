@@ -32,7 +32,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     AgmCoreModule.forRoot({
