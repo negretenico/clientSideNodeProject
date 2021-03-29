@@ -1,8 +1,6 @@
-<!-- weather section -->
-<!-- <div class="carousel-caption">
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </div> -->
+<!-- <div>
+  <h1>city: {{weather.city}}, Temperature: {{weather.Tem</h1>
+</div> -->
 <div>
   <ngb-carousel *ngIf="images" (slide)="onSlide($event)">
     <ng-template *ngFor="let image of images; let i = index" ngbSlide [id]="'slideId_' + i">
