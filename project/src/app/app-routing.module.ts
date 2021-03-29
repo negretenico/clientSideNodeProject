@@ -3,12 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ChatComponent } from './chat/chat.component';
 import { ContactUsComponent } from './contact/contact-us/contact-us.component';
+import { ThankyouComponent } from './contact/thankyou/thankyou.component';
 
 const routes: Routes = [
-<<<<<<< HEAD
   {path: 'about', component: AboutUsComponent},
-  {path: 'contact', component:ContactUsComponent}
-=======
   {
   path: 'contact',children:
   [
@@ -24,7 +22,6 @@ const routes: Routes = [
   path: 'chat', component: ChatComponent
 }
 
->>>>>>> chat
 
 ];
 
