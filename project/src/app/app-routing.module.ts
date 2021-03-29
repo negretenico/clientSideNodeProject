@@ -26,10 +26,11 @@ const routes: Routes = [
 {
   path: 'chat', component: ChatComponent
 },
-{path:'**',component: PageNotFoundComponent},
 {
   path: 'sports', component: SportsComponent
-}
+},
+{path:'**',component: PageNotFoundComponent},
+
 
 
 ];
