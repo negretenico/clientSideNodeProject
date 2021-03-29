@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,22 +9,28 @@ import { Router } from '@angular/router';
 })
 export class ContactUsComponent implements OnInit {
 
-  emailForm = new FormGroup(
-    {
+    
+  emailCompanyForm: any;
+    
+    
 
-      query: new FormControl('',Validators.required),
-      email: new FormControl('',[Validators.required,Validators.email]),
-    
-    }
-    
-      );
-    
-    
-    
-    
-      constructor(private router:Router) { }
+      constructor(private router:Router,private fb: FormBuilder) {
+
+
+        this.emailCompanyForm = new FormGroup(
+          {
+      
+            query: new FormControl('',Validators.required),
+            email: new FormControl('',[Validators.required,Validators.email]),
+          
+          }
+          
+            );
+        
+       }
     
       ngOnInit(): void {
+        
       }
     
       
