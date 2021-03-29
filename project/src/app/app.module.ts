@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { ContactUsComponent } from './contact/contact-us/contact-us.component';
 import { ThankyouComponent } from './contact/thankyou/thankyou.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactUsComponent,
     ThankyouComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,

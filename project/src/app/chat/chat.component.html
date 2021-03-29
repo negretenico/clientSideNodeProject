@@ -1,0 +1,16 @@
+<div id="chat-applicaton">
+    <h2>Chat Application</h2>
+    <div id="chat-window">
+      <div id="output" *ngFor="let data of output">
+          <p><strong>{{data.handle}} : </strong>{{data.message}}</p>
+      </div>
+      <div id="feedback"><p>{{feedback}}</p></div>
+    </div>
+    <input id="handle" type="text" [(ngModel)]="userName" placeholder="Name" />
+    <input id="message" type="text" [(ngModel)]="message" placeholder="Message" autocomplete="off"
+      (keypress)="messageTyping()" />
+    <button type="button" id="send" style="cursor: pointer;" (click)="sendMessage()">Send</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    <script src="/socket.io/socket.io.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    
+</div>
