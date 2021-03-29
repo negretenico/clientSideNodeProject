@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ChatComponent } from './chat/chat.component';
 import { ContactUsComponent } from './contact/contact-us/contact-us.component';
 import { ThankyouComponent } from './contact/thankyou/thankyou.component';
+import { SportsComponent } from './sports/sports.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {    path: '', component: HomeComponent},
@@ -26,6 +27,9 @@ const routes: Routes = [
   path: 'chat', component: ChatComponent
 },
 {path:'**',component: PageNotFoundComponent},
+{
+  path: 'sports', component: SportsComponent
+}
 
 
 ];
