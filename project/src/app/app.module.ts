@@ -11,6 +11,7 @@ import { ContactUsComponent } from './contact/contact-us/contact-us.component';
 import { ThankyouComponent } from './contact/thankyou/thankyou.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ChatComponent } from './chat/chat.component';
+import { SportsComponent } from './sports/sports.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ChatComponent } from './chat/chat.component';
     ContactUsComponent,
     ThankyouComponent,
     AboutUsComponent,
-    ChatComponent
+    ChatComponent,
+    SportsComponent,
   ],
   imports: [
     BrowserModule,
