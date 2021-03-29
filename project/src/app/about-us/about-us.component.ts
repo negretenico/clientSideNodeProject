@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import data from "../../../Data/companyData.json"
+import { Component, OnInit } from '@angular/core';
+import * as data from "../../../Data/companyData.json"
 
 
 @Component({
