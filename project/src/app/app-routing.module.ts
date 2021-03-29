@@ -6,6 +6,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ChatComponent } from './chat/chat.component';
 import { ContactUsComponent } from './contact/contact-us/contact-us.component';
 import { ThankyouComponent } from './contact/thankyou/thankyou.component';
+import { SportsComponent } from './sports/sports.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
@@ -26,6 +27,9 @@ const routes: Routes = [
   path: 'chat', component: ChatComponent
 },
 {path:'**',component: PageNotFoundComponent},
+{
+  path: 'sports', component: SportsComponent
+}
 
 
 ];
