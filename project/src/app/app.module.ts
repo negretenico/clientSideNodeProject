@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,8 @@ import { ChatComponent } from './chat/chat.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AgmCoreModule } from '@agm/core';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
@@ -22,11 +25,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ChatComponent,
     HeaderComponent,
     FooterComponent,
+    HomeComponent,
     PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgbModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     AgmCoreModule.forRoot({
