@@ -2,18 +2,18 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD:project/src/app/header/header.component.spec.ts
-import { HeaderComponent } from './header.component';
+<<<<<<< HEAD:project/src/app/chat/chat.component.spec.ts
+import { ChatComponent } from './chat.component';
 
-describe('HeaderComponent', () => {
-  let component: HeaderComponent;
-  let fixture: ComponentFixture<HeaderComponent>;
+describe('ChatComponent', () => {
+  let component: ChatComponent;
+  let fixture: ComponentFixture<ChatComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeaderComponent ]
+      declarations: [ ChatComponent ]
 =======
->>>>>>> origin/main
+>>>>>>> hemanth
 import { FooterComponent } from './footer.component';
 
 describe('FooterComponent', () => {
@@ -25,8 +25,8 @@ describe('FooterComponent', () => {
       declarations: [ FooterComponent ]
 <<<<<<< HEAD
 =======
->>>>>>> origin/main:project/src/app/footer/footer.component.spec.ts
->>>>>>> origin/main
+>>>>>>> hemanth:project/src/app/footer/footer.component.spec.ts
+>>>>>>> hemanth
     })
     .compileComponents();
   });
@@ -35,12 +35,12 @@ describe('FooterComponent', () => {
 <<<<<<< HEAD
     fixture = TestBed.createComponent(FooterComponent);
 =======
-<<<<<<< HEAD:project/src/app/header/header.component.spec.ts
-    fixture = TestBed.createComponent(HeaderComponent);
+<<<<<<< HEAD:project/src/app/chat/chat.component.spec.ts
+    fixture = TestBed.createComponent(ChatComponent);
 =======
     fixture = TestBed.createComponent(FooterComponent);
->>>>>>> origin/main:project/src/app/footer/footer.component.spec.ts
->>>>>>> origin/main
+>>>>>>> hemanth:project/src/app/footer/footer.component.spec.ts
+>>>>>>> hemanth
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
