@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class NewsService {
 
-  linkAPI : string = "http://localhost:3000"
+  linkAPI : string = "http://localhost:3004"
   newsURL : string = this.linkAPI + "/api/news"
 
   constructor(private http: HttpClient) { }
