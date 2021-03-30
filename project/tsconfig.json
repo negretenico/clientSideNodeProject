@@ -6,10 +6,15 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    //Added by najrul
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false,
+    //Above line
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
+    "resolveJsonModule":true,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",

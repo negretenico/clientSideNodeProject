@@ -1,0 +1,72 @@
+<!-- <div>
+  <h1>city: {{weather.city}}, Temperature: {{weather.Tem</h1>
+</div> -->
+<div>
+  <ngb-carousel *ngIf="images" (slide)="onSlide($event)">
+    <ng-template *ngFor="let image of images; let i = index" ngbSlide [id]="'slideId_' + i">
+      <img [src]="image.urlToImage" style="width: 100%; height: 50vh" alt="Random slide">
+      <div class="carousel-caption">
+        <h3 style="color: yellow;">{{image.description}}</h3>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <!-- <div class="container">
+    <div style="background-color: #0E49AC;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin-left: 150px;">
+      First News
+    </div>
+    <div style="background-color: #0E49AC;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin-left: 23px;">
+      Second News
+    </div>
+    <div style="background-color: #0E49AC;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin-left: 23px;">
+      Third News
+    </div>
+    <p style="text-align: center;">Some text about the story</p>
+    <p style="text-align: center;">{{this.imgIndex}}</p>
+  </div> -->
+  <!-- <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[0].urlToImage" style="width: 100%; height: 50vh" Random="first slide">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[1].urlToImage" style="width: 100%; height: 50vh" alt="Random second slide">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[2].urlToImage" style="width: 100%; height: 50vh" alt="Random third slide">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[0].urlToImage" style="width: 100%; height: 50vh" Random="first slide">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[1].urlToImage" style="width: 100%; height: 50vh" alt="Random second slide">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[2].urlToImage" style="width: 100%; height: 50vh" alt="Random third slide">
+      </div>
+    </ng-template>
+  </ngb-carousel> -->
+</div>
