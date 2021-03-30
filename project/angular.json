@@ -1,9 +1,13 @@
+
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Project2": {
+    "project": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +21,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Project2",
+            "outputPath": "dist/project",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,13 +35,9 @@
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.slim.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Project2:build"
+            "browserTarget": "project:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Project2:build:production"
+              "browserTarget": "project:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Project2:build"
+            "browserTarget": "project:build"
           }
         },
         "test": {
@@ -120,21 +120,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Project2:serve"
+            "devServerTarget": "project:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Project2:serve:production"
+              "devServerTarget": "project:serve:production"
             }
           }
         }
       }
     }
   },
-<<<<<<< HEAD
-  "defaultProject": "Project2"
-}
-=======
   "defaultProject": "project"
 }
->>>>>>> origin/main

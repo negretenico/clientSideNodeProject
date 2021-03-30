@@ -11,6 +11,11 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { WeatherComponent } from './weather/weather.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ThankyouComponent } from './contact/thankyou/thankyou.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AgmCoreModule } from '@agm/core';
+import { SportsComponent } from './sports/sports.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +26,21 @@ import { HttpClientModule } from '@angular/common/http';
     ChatComponent,
     HeaderComponent,
     FooterComponent,
-    WeatherComponent
+    WeatherComponent,
+    SportsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCiffs__6ZtOyAOu_xbNBbGpslvsMNR-Qg'
+    }), 
+      NgbModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

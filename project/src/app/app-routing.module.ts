@@ -8,6 +8,7 @@ import { ThankyouComponent } from './contact/thankyou/thankyou.component';
 import { SportsComponent } from './sports/sports.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
+import { WeatherComponent } from './weather/weather.component';
 
 const routes: Routes = [
   {    path: '', component: HomeComponent},
@@ -29,6 +30,7 @@ const routes: Routes = [
 {
   path: 'sports', component: SportsComponent
 },
+{path:'weather', component:WeatherComponent},
 {path:'**',component: PageNotFoundComponent},
 
 
