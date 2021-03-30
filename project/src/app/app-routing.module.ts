@@ -30,6 +30,7 @@ const routes: Routes = [
 {
   path: 'sports', component: SportsComponent
 },
+
 {path:'weather', component:WeatherComponent},
 {path:'**',component: PageNotFoundComponent},
 

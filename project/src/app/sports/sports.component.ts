@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ISport } from './sports-service/sport';
+import { SportsService } from './sports-service/sports.service';
 
 @Component({
   selector: 'app-sports',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SportsComponent implements OnInit {
 
-  constructor() { }
+  latestSport: ISport[] = [];
 
-  ngOnInit(): void {
+  constructor (private sportService: SportsService) {
+      console.log('Inside Constructor');
   }
 
+  ngOnInit(): void{
+      console.log('Inside ngOnInit');
+
+      //this.newEmployee = this.newEmployeeService.getEmployee();
+
+      this.sportService.getSports()
+          .subscribe( (res: any) => {
+            console.log(res);
+            this.latestSport = res;
+            console.log(this.latestSport);
+          });
+  }
 }
