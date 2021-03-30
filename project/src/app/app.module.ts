@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,11 +10,8 @@ import { ChatComponent } from './chat/chat.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AgmCoreModule } from '@agm/core';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { SportsComponent } from './sports/sports.component';
-import { HomeComponent } from './home/home.component';
+import { WeatherComponent } from './weather/weather.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,13 +22,18 @@ import { HomeComponent } from './home/home.component';
     ChatComponent,
     HeaderComponent,
     FooterComponent,
+<<<<<<< HEAD
     HomeComponent,
     PageNotFoundComponent,
     SportsComponent,
+=======
+    WeatherComponent
+>>>>>>> f8007f02a5594a2554376d7bfd99fcd81fdc7de6
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< HEAD
     NgbModule,
     HttpClientModule,
     FormsModule,
@@ -40,6 +41,9 @@ import { HomeComponent } from './home/home.component';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCiffs__6ZtOyAOu_xbNBbGpslvsMNR-Qg'
     })
+=======
+    HttpClientModule
+>>>>>>> f8007f02a5594a2554376d7bfd99fcd81fdc7de6
   ],
   providers: [],
   bootstrap: [AppComponent]
