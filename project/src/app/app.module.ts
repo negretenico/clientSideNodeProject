@@ -31,8 +31,7 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     WeatherComponent,
     SportsComponent,
-    PageNotFoundComponent,
-    HomeComponent
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
