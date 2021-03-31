@@ -9,30 +9,24 @@ import { SportsComponent } from './sports/sports.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 import { WeatherComponent } from './weather/weather.component';
+import { LatestNewsComponent } from './home/latest-news/latest-news.component';
 
 const routes: Routes = [
-  {    path: '', component: HomeComponent},
-  {path: 'about', component: AboutUsComponent},
-  {
-  path: 'contact',children:
+  { path: '', component: HomeComponent },
+  { path: 'latest-news/:title', component: LatestNewsComponent },
+  { path: 'latest-news', redirectTo : 'sports' },
+  { path: 'about', component: AboutUsComponent },
+  { path: 'contact', children:
   [
-    {path: '',component: ContactUsComponent},
-    {path: 'thankYou',component: ThankyouComponent},
-
-   ]
+    {path: '', component: ContactUsComponent },
+    {path: 'thankYou',component: ThankyouComponent },
+  ]
 },
-{
-  path: 'about' , component: AboutUsComponent
-},
-{
-  path: 'chat', component: ChatComponent
-},
-{
-  path: 'sports', component: SportsComponent
-},
-
-{path:'weather', component:WeatherComponent},
-{path:'**',component: PageNotFoundComponent},
+{ path: 'about' , component: AboutUsComponent },
+{ path: 'chat', component: ChatComponent },
+{ path: 'sports', component: SportsComponent },
+{ path:'weather', component:WeatherComponent },
+{ path:'**',component: PageNotFoundComponent },
 
 
 

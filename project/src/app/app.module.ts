@@ -17,6 +17,7 @@ import { AgmCoreModule } from '@agm/core';
 import { SportsComponent } from './sports/sports.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
+import { LatestNewsComponent } from './home/latest-news/latest-news.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     WeatherComponent,
     SportsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LatestNewsComponent
   ],
   imports: [
     BrowserModule,
