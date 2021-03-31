@@ -51,28 +51,24 @@
 <div class="container text-center">    
   <h3>Here are some latest news!</h3><br>
   <div class="row">
-    <div class="col-sm-4">
-      <img src="https://images.daznservices.com/di/library/GOAL/7/89/aguero-manchester-city-2021_136yehh7hp0v01lqeh27dod8wq.jpg?" class="img-responsive" style="width:100%" alt="Image">
-      <p>Transfer news and rumours LIVE: Aguero on brink of PSG switch</p>
-    </div>
-    <div class="col-sm-4"> 
-      <img src="https://images.daznservices.com/di/library/GOAL/4b/c2/cristiano-ronaldo-portugal-2021_1i0dwjjrsu4vy1uuu2cet0jb1l.jpg" class="img-responsive" style="width:100%" alt="Image">
-      <p>Ronaldo and Portugal offered apology by referee for disallowed goal against Serbia</p>    
-    </div>
-    <div class="col-sm-4"> 
-        <img src="https://images.daznservices.com/di/library/GOAL/22/30/robert-lewandowski-poland_dmdt609aoxva1jpps22fgvgtf.jpg" class="img-responsive" style="width:100%" alt="Image">
-        <p>Lewandowski ruled out of World Cup qualifier against England after Poland confirm knee ligament injury</p>    
+    <div class="col-sm-4"  *ngFor = "let sport of latestSport">
+      <img src="{{sport.urlToImage}}" class="img-responsive" style="width:100%" alt="Image">
+      <p>{{sport.title}}</p>
     </div>
   </div>
 
 </div><br>
 
-<div style="right: -80px; border: 0px none; height: 370px; position: fixed; width: 270px; overflow: hidden; bottom: 0px;">
+<!--<div style="right: -80px; border: 0px none; height: 370px; position: fixed; width: 270px; overflow: hidden; bottom: 0px;">
     <div style="overflow: hidden;">
     </div>
     <iframe src="http://localhost:4200/chat" scrolling="" style="height: 300px; border: 0px none; width: 165px; margin-bottom: 0px; margin-left: 24px;">
     </iframe>
-</div>
+</div>-->
+
+  <a class="open-button" href="http://localhost:4200/chat" target="_blank">Chat</a> 
+  
+
 
 </body>
 </html>
