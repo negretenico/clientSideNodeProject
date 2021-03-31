@@ -9,6 +9,7 @@ import * as data from "../../../Data/companyData.json"
 })
 export class AboutUsComponent implements OnInit {
   company: any;
+  names: String[] = ['Nicholas Negrete', 'Leonardo Espinoza', 'Mit Patel', 'Najurl Islam', 'Hemanth Ravigowda']
   constructor() { 
     this.company = data.company;
     console.log(this.company);

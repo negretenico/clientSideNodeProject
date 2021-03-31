@@ -23,7 +23,7 @@ export class SportsComponent implements OnInit {
       this.sportService.getSports()
           .subscribe( (res: any) => {
             console.log(res);
-            this.latestSport = res;
+            this.latestSport = res.slice(0,3);
             console.log(this.latestSport);
           });
   }
