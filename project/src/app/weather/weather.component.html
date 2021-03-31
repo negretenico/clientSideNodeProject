@@ -15,9 +15,9 @@
   </div>
   <div class="col-md-3">
     <p>{{data.name + ", " + data.sys.country}}</p>
-    <!--
-    <p *ngIf="data.timezone >= 0; else utc_pos">UTC +{{parseInt((data.timezone/60)/60)}}:{{parseInt((data.timezone/60)%60)}}</p>
-    <p *ngIf="data.timezone < 0; else utc_pos">UTC -{{-1*parseInt((data.timezone/60)/60)}}:{{-1*parseInt((data.timezone/60)%60)}}</p>
-    -->
+    <form>
+      <input type="text" name="place" id="place" placeholder="City,State,Country" #place> <br>
+      <button type="submit" class="btn btn-primary" (click)="updateWeather(place.value)">Get weather</button>
+    </form>
   </div>
 </div>
